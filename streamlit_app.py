@@ -49,7 +49,7 @@ def apply_custom_css():
             background-repeat: no-repeat;
             filter: blur(3px);
             z-index: -1;
-        }
+        }*/
         
         /* 2. Main content area readability overlay */
         .main .block-container {
