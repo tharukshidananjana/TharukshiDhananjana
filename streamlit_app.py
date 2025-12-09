@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-
+st.set_page_config(layout="wide")
 
 # Importing your recommendation_system file and the file list
 # We import ZSCORE_DATA_FILES to pass the list of 3-year files to load_data
@@ -111,7 +111,16 @@ def apply_custom_css():
             border: 1px solid #00bcd4;
             box-shadow: 0 4px 8px rgba(0,0,0,0.05);
         }
-        
+        /* 9. Mobile Responsiveness Fix (Force 100% width on small screens) */
+        @media (max-width: 600px) {
+        /* General class names used by Streamlit for columns */
+        /* This forces all blocks within columns to take 100% width */
+        .st-emotion-cache-1r6r4v5, .st-emotion-cache-1c9v9yl, .st-emotion-cache-1q1g793, .st-emotion-cache-1r4w75t {
+        width: 100% !important;
+         flex-direction: column !important;/* - This may not be necessary, but try it if issues persist */
+    }
+}
+
         </style>
     """, unsafe_allow_html=True)
 
