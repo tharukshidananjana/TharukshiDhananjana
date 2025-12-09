@@ -35,7 +35,7 @@ df_cutoffs = get_data()
 def apply_custom_css():
     st.markdown("""
         <style>
-        /* 1. Background layer with blur */
+        /* 1. Background layer with blur 
         .stApp:before {
             content: '';
             position: fixed;
@@ -49,7 +49,7 @@ def apply_custom_css():
             background-repeat: no-repeat;
             filter: blur(3px);
             z-index: -1;
-        }
+        }*/
         
         /* 2. Main content area readability overlay */
         .main .block-container {
